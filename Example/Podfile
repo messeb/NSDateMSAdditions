@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'NSDateMSAdditions_Tests', :exclusive => true do
+  pod "NSDateMSAdditions", :path => "../"
+
+  pod 'Quick'
+  pod 'Nimble'
+end
