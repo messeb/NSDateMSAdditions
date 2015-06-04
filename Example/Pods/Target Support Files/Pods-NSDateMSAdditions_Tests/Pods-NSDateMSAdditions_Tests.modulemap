@@ -1,0 +1,6 @@
+framework module Pods_NSDateMSAdditions_Tests {
+  umbrella header "Pods-NSDateMSAdditions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -4,45 +4,44 @@ import Quick
 import Nimble
 import NSDateMSAdditions
 
-class TableOfContentsSpec: QuickSpec {
+class NSDateMSAdditionsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("ms_startOfDay tests") {
 
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+            it("should have the time 00:00:00") {
+                
+                let dateComponents = NSCalendarUnit.CalendarUnitHour |
+                    NSCalendarUnit.CalendarUnitMinute |
+                    NSCalendarUnit.CalendarUnitSecond
+                
+                if let date = NSDate().ms_startOfDay() {
+                    let dateParts = NSCalendar.currentCalendar().components(dateComponents, fromDate: date)
+                
+                    expect(dateParts.hour) == 0
+                    expect(dateParts.minute) == 0
+                    expect(dateParts.second) == 0
+                } else {
+                    fail()
+                }
             }
         }
 
-        context("these will pass") {
+        context("ms_endOfDay tests") {
 
-            it("can do maths") {
-                expect(23) == 23
-            }
-
-            it("can read") {
-                expect("🐮") == "🐮"
-            }
-
-            it("will exentually pass") {
-                var time = "passing"
-
-                dispatch_async(dispatch_get_main_queue()) {
-                    time = "done"
-                }
-
-                waitUntil { done in
-                    NSThread.sleepForTimeInterval(0.5)
-                    expect(time) == "done"
-
-                    done()
+            it("should have the time 23:59:59") {
+                
+                let dateComponents = NSCalendarUnit.CalendarUnitHour |
+                    NSCalendarUnit.CalendarUnitMinute |
+                    NSCalendarUnit.CalendarUnitSecond
+                
+                if let date = NSDate().ms_endOfDay() {
+                    let dateParts = NSCalendar.currentCalendar().components(dateComponents, fromDate: date)
+                    
+                    expect(dateParts.hour) == 23
+                    expect(dateParts.minute) == 59
+                    expect(dateParts.second) == 59
+                } else {
+                    fail()
                 }
             }
         }

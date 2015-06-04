@@ -16,7 +16,7 @@
 		4FC0FFB88DA90544F54B259C /* Pods-NSDateMSAdditions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDateMSAdditions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NSDateMSAdditions_Tests/Pods-NSDateMSAdditions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D0680408865C7C5D266A1AC /* Pods_NSDateMSAdditions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSDateMSAdditions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCC0856741200F7AAC66CA1 /* Pods-NSDateMSAdditions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSDateMSAdditions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NSDateMSAdditions_Tests/Pods-NSDateMSAdditions_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = NSDateMSAdditions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* NSDateMSAdditions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSDateMSAdditions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		DD9552E64685F940E0265507 /* NSDateMSAdditions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NSDateMSAdditions.podspec; path = ../NSDateMSAdditions.podspec; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				607FACE51AFB9204008FA782 /* NSDateMSAdditions_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			);
 			name = NSDateMSAdditions_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* NSDateMSAdditions_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
