@@ -1,0 +1,19 @@
+{
+  "name": "NSDateMSAdditions",
+  "version": "0.1.0",
+  "summary": "Additions to the NSDate class",
+  "description": "                       An optional longer description of NSDateMSAdditions\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/messeb/NSDateMSAdditions",
+  "license": "MIT",
+  "authors": {
+    "messeb": "sebastian@messeb.com"
+  },
+  "source": {
+    "git": "https://github.com/messeb/NSDateMSAdditions.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Pod/Classes/NSDateMSAdditions.swift"
+}

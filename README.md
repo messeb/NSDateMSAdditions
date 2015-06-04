@@ -1,9 +1,6 @@
 # NSDateMSAdditions
 
-[![CI Status](http://img.shields.io/travis/messeb/NSDateMSAdditions.svg?style=flat)](https://travis-ci.org/messeb/NSDateMSAdditions)
-[![Version](https://img.shields.io/cocoapods/v/NSDateMSAdditions.svg?style=flat)](http://cocoapods.org/pods/NSDateMSAdditions)
-[![License](https://img.shields.io/cocoapods/l/NSDateMSAdditions.svg?style=flat)](http://cocoapods.org/pods/NSDateMSAdditions)
-[![Platform](https://img.shields.io/cocoapods/p/NSDateMSAdditions.svg?style=flat)](http://cocoapods.org/pods/NSDateMSAdditions)
+NSDate Extensions
 
 ## Usage
 
